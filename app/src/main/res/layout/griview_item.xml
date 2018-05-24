@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_gravity="center"
+    android:layout_margin="20dp"
+    android:background="@color/colorCourseBg"
+    android:orientation="vertical"
+    android:padding="2dp"
+    >
+
+    <TextView
+        android:id="@+id/CourseName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/Classroom"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center_horizontal"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/Teacher"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center_horizontal"
+        android:textSize="10sp" />
+
+</LinearLayout>

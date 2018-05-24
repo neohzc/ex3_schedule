@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="  2018年\n00月00日"
+            android:textSize="15sp" />
+        <!--Divide-->
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:background="#050505" />
+
+        <Spinner
+            android:id="@+id/Week"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+
+            />
+
+        <!--Divide-->
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:background="#050505" />
+
+        <TextView
+            android:id="@+id/Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="  00:00"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextViewStyle1"
+            android:layout_weight="0.5"
+            android:text=" \n " />
+
+        <TextView
+            style="@style/TextViewStyle1"
+            android:text="周一" />
+
+        <TextView
+            style="@style/TextViewStyle1"
+            android:text="周二" />
+
+        <TextView
+            style="@style/TextViewStyle1"
+            android:text="周三" />
+
+        <TextView
+            style="@style/TextViewStyle1"
+            android:text="周四" />
+
+        <TextView
+            style="@style/TextViewStyle1"
+            android:text="周五" />
+
+        <TextView
+            style="@style/TextViewStyle1"
+            android:text="周六" />
+
+        <TextView
+            style="@style/TextViewStyle1"
+            android:text="周日" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--显示多少节课-->
+            <LinearLayout
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextViewStyle2"
+                    android:text="一" />
+
+                <TextView
+                    style="@style/TextViewStyle2"
+                    android:text="二" />
+
+                <TextView
+                    style="@style/TextViewStyle2"
+                    android:text="三" />
+
+                <TextView
+                    style="@style/TextViewStyle2"
+                    android:text="四"/>
+
+                <TextView
+                    style="@style/TextViewStyle2"
+                    android:text="五" />
+
+                <TextView
+                    style="@style/TextViewStyle2"
+                    android:text="六"/>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#E5E5E5" />
+
+
+            <GridView
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="#E5E5E5"
+                android:horizontalSpacing="1dp"
+                android:numColumns="7"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="1dp">
+
+            </GridView>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
